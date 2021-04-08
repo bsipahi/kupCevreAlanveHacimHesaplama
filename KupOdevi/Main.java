@@ -8,15 +8,15 @@ import javax.swing.text.StyledEditorKit.AlignmentAction;
 public class Main {
 public static void main(String[] args) {
 	
-	KupBilgileri kupbilgileri = new KupBilgileri(); //Kup Bilgileri Constructor'Ä±na eriÅŸmek iÃ§in nesneyi oluÅŸturuyoruz
-	Scanner scanner = new Scanner(System.in); // KullanÄ±cÄ±dan veri almak iÃ§in scanner olustuyoruz
-	System.out.println("KÃ¼pÃ¼n Bir Kenar UzunluÄŸunu Giriniz : ");
-	kupbilgileri.kenarUzunlugu = scanner.nextInt(); // kullanÄ±cÄ±dan veriyi alÄ±yoruz
-	Hesaplama hesaplama = new Hesaplama(); //Hesaplama Constructor'Ä±na eriÅŸmek iÃ§in nesneyi oluÅŸturuyoruz
-	hesaplama.kenarUzunluk = kupbilgileri.kenarUzunlugu; //hesaplamadaki kenarUzunluk deÄŸiÅŸkenine iÅŸlem yapabilmesi iÃ§in KÃ¼pBilgilerindeki kenarUzunluÄŸu verisini atÄ±yoruz
-	System.out.println("Hacim = "+hesaplama.hacimHesapla()+" BirimÂ³"); //Hesaplama classÄ±ndaki hacimHesapla metodunu Ã§aÄŸÄ±rÄ±p iÅŸlemin sonucunu gosterÄ±yoruz
-	System.out.println("Alan = "+hesaplama.alanHesapla()+" BirimÂ²"); //Hesaplama classÄ±ndaki alanHesapla metodunu Ã§aÄŸÄ±rÄ±p iÅŸlemin sonucunu gosterÄ±yoruz
-	System.out.println("Ã‡evre = "+hesaplama.cevreHesapla()+" Birim"); //Hesaplama classÄ±ndaki cevreHesapla metodunu Ã§aÄŸÄ±rÄ±p iÅŸlemin sonucunu gosterÄ±yoruz
+	kupBilgileri kupbilgileri = new kupBilgileri(); //Kup Bilgileri Constructor'ına erişmek için nesneyi oluşturuyoruz
+	Scanner scanner = new Scanner(System.in); // Kullanıcıdan veri almak için scanner olustuyoruz
+	System.out.println("Küpün Bir Kenar Uzunluğunu Giriniz : ");
+	kupbilgileri.kenarUzunlugu = scanner.nextInt(); // kullanıcıdan veriyi alıyoruz
+	hesaplama hesaplama = new hesaplama(); //Hesaplama Constructor'ına erişmek için nesneyi oluşturuyoruz
+	hesaplama.kenarUzunluk = kupbilgileri.kenarUzunlugu; //hesaplamadaki kenarUzunluk değişkenine işlem yapabilmesi için KüpBilgilerindeki kenarUzunluğu verisini atıyoruz
+	System.out.println("Hacim = "+hesaplama.hacimHesapla()+" Birim³"); //Hesaplama classındaki işlem yap metodunu çağırıp işlemin sonucunu gosterıyoruz
+	System.out.println("Alan = "+hesaplama.alanHesapla()+" Birim²");
+	System.out.println("Çevre = "+hesaplama.cevreHesapla()+" Birim");
 	
 		
 	}
